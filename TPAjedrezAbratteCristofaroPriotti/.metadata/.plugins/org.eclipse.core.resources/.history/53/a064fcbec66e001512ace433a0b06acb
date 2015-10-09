@@ -1,0 +1,12 @@
+package paquetePiezas;
+
+
+public class Torre extends Ficha {
+
+	public Torre(String a, int j, int k) {
+		super(a, j, k);
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

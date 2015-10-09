@@ -1,0 +1,42 @@
+package paqueteAjedrez;
+
+public class Rey {
+
+public boolean mover(int filaInicial, int columnaInicial, int proxFila, int proxCol, int[][] matrizJugador)
+
+	{
+        
+                
+        if (proxFila == (filaInicial + 1) && proxCol == columnaInicial) 
+        {
+            return true;
+        } else if (proxFila == (filaInicial + 1) && proxCol == (columnaInicial - 1)) 
+        {
+            return true;
+        } else if (proxFila == filaInicial && proxCol == columnaInicial - 1) 
+        {
+            return true;
+        } else if (proxFila == (filaInicial - 1) && proxCol == (columnaInicial - 1)) 
+        {
+            return true;
+        } else if (proxFila == (filaInicial - 1) && proxCol == columnaInicial) 
+        {
+            return true;
+        } else if (proxFila == (filaInicial - 1) && proxCol == (columnaInicial + 1)) 
+        {
+            return true;
+        } else if (proxFila == filaInicial && proxCol == (columnaInicial + 1))
+        {
+            return true;
+        } else if (proxFila == (filaInicial + 1) && proxCol == (columnaInicial + 1))
+        {
+            return true;
+        } else {
+            
+            System.out.println("Movimiento ilegal");
+            return false;
+        }
+}
+}
+            
+        

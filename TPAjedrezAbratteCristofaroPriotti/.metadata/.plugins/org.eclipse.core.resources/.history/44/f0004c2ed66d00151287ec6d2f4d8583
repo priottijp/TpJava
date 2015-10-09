@@ -1,0 +1,180 @@
+package paqueteAjedrez;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+import javax.swing.JMenuBar;
+import javax.swing.JFormattedTextField;
+import javax.swing.JComboBox;
+import javax.swing.JEditorPane;
+import javax.swing.JList;
+import javax.swing.JButton;
+import javax.swing.JTabbedPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import java.awt.Font;
+import javax.swing.border.EtchedBorder;
+import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+
+public class Grafico1 extends JFrame {
+
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JButton btnNewButton_1;
+	private JTable Ajedrez;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+
+    /**
+     * Launch the application.
+     */
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    Grafico1 frame = new Grafico1();
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    /**
+     * Create the frame.
+     */
+    public Grafico1() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        contentPane = new JPanel();
+        contentPane.setForeground(Color.BLACK);
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+        setContentPane(contentPane);
+        contentPane.setLayout(null);
+        
+        btnNewButton_1 = new JButton("Comenzar partida nueva");
+        btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+        btnNewButton_1.setBackground(Color.ORANGE);
+        btnNewButton_1.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent arg0) {
+        	}
+        });
+        btnNewButton_1.setBounds(10, 301, 206, 23);
+        contentPane.add(btnNewButton_1);
+        
+        Ajedrez = new JTable();
+        Ajedrez.setForeground(Color.BLACK);
+        Ajedrez.setSurrendersFocusOnKeystroke(true);
+        Ajedrez.setFillsViewportHeight(true);
+        Ajedrez.setColumnSelectionAllowed(true);
+        Ajedrez.setCellSelectionEnabled(true);
+        Ajedrez.setBackground(Color.WHITE);
+        Ajedrez.setToolTipText("");
+        Ajedrez.setFont(new Font("Tahoma", Font.BOLD, 15));
+        Ajedrez.setModel(new DefaultTableModel(
+        	new Object[][] {
+        		{null, "  A", "  B", "  C", "  D", "  E", "  F", "  G", " H"},
+        		{"8", "TN", "CN", "AN", "QN", "KN", "AN", "CN", "TN"},
+        		{"7", "PN", "PN", "PN", "PN", "PN", "PN", "PN", "PN"},
+        		{"6", null, null, null, null, null, null, null, null},
+        		{"5", null, null, null, null, null, null, null, null},
+        		{"4", null, null, null, null, null, null, null, null},
+        		{"3", null, null, null, null, null, null, null, null},
+        		{"2", "PB", "PB", "PB", "PB", "PB", "PB", "PB", "PB"},
+        		{"1", "TB", "CB", "AB", "QB", "KB", "AB", "CB", "TB"},
+        	},
+        	new String[] {
+        		" ", "A", "B", "C", "D", "E", "F", "G", "H"
+        	}
+        ));
+        Ajedrez.getColumnModel().getColumn(0).setPreferredWidth(20);
+        Ajedrez.getColumnModel().getColumn(0).setMinWidth(20);
+        Ajedrez.getColumnModel().getColumn(1).setPreferredWidth(45);
+        Ajedrez.getColumnModel().getColumn(2).setPreferredWidth(45);
+        Ajedrez.getColumnModel().getColumn(3).setPreferredWidth(45);
+        Ajedrez.getColumnModel().getColumn(4).setPreferredWidth(45);
+        Ajedrez.getColumnModel().getColumn(5).setPreferredWidth(45);
+        Ajedrez.getColumnModel().getColumn(6).setPreferredWidth(45);
+        Ajedrez.getColumnModel().getColumn(7).setPreferredWidth(45);
+        Ajedrez.getColumnModel().getColumn(8).setPreferredWidth(45);
+        Ajedrez.setRowHeight(30);
+        Ajedrez.setBounds(10, 20, 350, 270);
+        contentPane.add(Ajedrez);
+        
+        JLabel lblFilaNro = new JLabel("Fila nro:");
+        lblFilaNro.setBounds(10, 349, 83, 14);
+        contentPane.add(lblFilaNro);
+        
+        JLabel lblLetraColumna = new JLabel("Letra Columna:");
+        lblLetraColumna.setBounds(10, 374, 105, 14);
+        contentPane.add(lblLetraColumna);
+        
+        JLabel lblMoverDesde = new JLabel("Mover desde:");
+        lblMoverDesde.setBounds(10, 324, 83, 14);
+        contentPane.add(lblMoverDesde);
+        
+        JLabel lblHasta = new JLabel("Hasta:");
+        lblHasta.setBounds(10, 415, 46, 14);
+        contentPane.add(lblHasta);
+        
+        JLabel lblNuevaFila = new JLabel("Nueva fila:");
+        lblNuevaFila.setBounds(10, 440, 105, 14);
+        contentPane.add(lblNuevaFila);
+        
+        JLabel lblNuevaColumna = new JLabel("Nueva Columna:");
+        lblNuevaColumna.setBounds(10, 465, 118, 14);
+        contentPane.add(lblNuevaColumna);
+        
+        textField = new JTextField();
+        textField.setBounds(125, 346, 46, 20);
+        contentPane.add(textField);
+        textField.setColumns(10);
+        
+        textField_1 = new JTextField();
+        textField_1.setColumns(10);
+        textField_1.setBounds(125, 371, 46, 20);
+        contentPane.add(textField_1);
+        
+        textField_2 = new JTextField();
+        textField_2.setColumns(10);
+        textField_2.setBounds(125, 437, 46, 20);
+        contentPane.add(textField_2);
+        
+        textField_3 = new JTextField();
+        textField_3.setColumns(10);
+        textField_3.setBounds(125, 462, 46, 20);
+        contentPane.add(textField_3);
+        
+        JButton btnMoverFicha = new JButton("Mover Ficha");
+        btnMoverFicha.setBackground(Color.ORANGE);
+        btnMoverFicha.setFont(new Font("Tahoma", Font.BOLD, 11));
+        btnMoverFicha.setForeground(Color.BLACK);
+        btnMoverFicha.setBounds(195, 461, 106, 23);
+        contentPane.add(btnMoverFicha);
+        setBounds(0,0,380,544);
+    }
+
+    public void paint (Graphics g)
+    {
+        super.paint(g);                    
+        g.setColor (Color.black);
+    }
+    }
+    

@@ -1,0 +1,79 @@
+package paqueteMetodos;
+
+import paqueteAjedrez.*;
+import paquetePiezas.*;
+
+public class Jugar {
+
+	public static void main (String[] args)
+	{
+	
+	Jugador j= new Jugador();
+	Jugador j2= new Jugador();
+	Grafico1 g1= new Grafico1();
+	Grafico2 g2= new Grafico2();
+	
+	g1.setVisible(true);
+	
+	}
+	
+	public static void nuevaPartida()
+	{
+		Ficha[][] tab = null;
+		
+		tab[1][1]=new Torre("n",1,1);
+		tab[1][2]=new Caballo("n",1,2);
+		tab[1][3]=new Alfil("n", 1,3);
+		tab[1][4]=new Reina("n",1,4);
+		tab[1][5]=new Rey("n",1,5);
+		tab[1][8]=new Torre("n",1,8);
+		tab[1][7]=new Caballo("n",1,7);
+		tab[1][6]=new Alfil("n", 1,6);
+		tab[2][1]=new Peon("n",2,1);
+		tab[2][2]=new Peon("n",2,2);
+		tab[2][3]=new Peon("n",2,3);
+		tab[2][4]=new Peon("n",2,4);
+		tab[2][5]=new Peon("n",2,5);
+		tab[2][6]=new Peon("n",2,6);
+		tab[2][7]=new Peon("n",2,7);
+		tab[2][8]=new Peon("n",2,8);
+		
+		tab[8][1]=new Torre("b",8,1);
+		tab[8][2]=new Caballo("b",8,2);
+		tab[8][3]=new Alfil("b",8,3);
+		tab[8][4]=new Reina("b",8,4);
+		tab[8][5]=new Rey("b",8,5);
+		tab[8][8]=new Torre("b",8,8);
+		tab[8][7]=new Caballo("b",8,7);
+		tab[8][6]=new Alfil("b",8,6);
+		tab[7][1]=new Peon("b",7,1);
+		tab[7][2]=new Peon("b",7,2);
+		tab[7][3]=new Peon("b",7,3);
+		tab[7][4]=new Peon("b",7,4);
+		tab[7][5]=new Peon("b",7,5);
+		tab[7][6]=new Peon("b",7,6);
+		tab[7][7]=new Peon("b",7,7);
+		tab[7][8]=new Peon("b",7,8);
+		
+	
+		
+		
+		
+		
+		
+		
+	}
+	
+	public static void moverficha()
+	{
+		
+		
+	}
+	
+	
+	
+	
+
+	
+	
+}

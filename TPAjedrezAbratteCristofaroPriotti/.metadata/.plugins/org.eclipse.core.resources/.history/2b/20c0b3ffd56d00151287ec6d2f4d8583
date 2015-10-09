@@ -1,0 +1,25 @@
+package paqueteAjedrez;
+
+public class Reina {
+	
+	
+	 public boolean mover(int filaInicial, int columnaInicial, int proxFila, int proxCol, int[][] matrizJugador) {
+	        
+	        boolean b = true;
+	        
+	        if (filaInicial == proxFila ^ columnaInicial == proxCol) {
+	            b = true;
+	        } else if (filaInicial != proxFila && columnaInicial != proxCol) {
+	            b = false; 
+	        } else {
+	            
+	            System.out.println("Reina se puede mover en cualquier direccion"); 
+	            return false;
+	            
+	        }
+	        
+	        return movimiento(filaInicial, columnaInicial, proxFila, proxCol, matrizJugador, b);
+	        
+	    }
+
+}

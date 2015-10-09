@@ -1,0 +1,17 @@
+package paquetePiezas;
+
+public class Rey extends Ficha {
+
+	public static boolean mover(int filaAnt, int filaN, int colAnt, int colN)
+	{
+		boolean ban = false;
+		if(filaAnt!=filaN && colAnt==colN) { if(filaAnt+1>=filaN) {ban=true;} }
+		if(filaAnt==filaN && colAnt==colN) {ban= false;};
+		if(filaAnt+1==filaN && colAnt!=colN) {ban= true;};
+		if(filaAnt!=filaN && colAnt==colN) {ban= true;};
+		if(filaAnt!=filaN && colAnt==colN) {ban= false;};
+		if(filaAnt!=filaN && colAnt==colN) {ban= false;};
+		if(filaAnt!=filaN && colAnt==colN) {ban= false;};
+		
+		return ban;
+}}

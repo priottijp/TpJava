@@ -1,0 +1,273 @@
+package paqueteAjedrez;
+import paqueteMetodos.Jugar;
+import paquetePiezas.Ficha;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+import javax.swing.JMenuBar;
+import javax.swing.JFormattedTextField;
+import javax.swing.JComboBox;
+import javax.swing.JEditorPane;
+import javax.swing.JList;
+import javax.swing.JButton;
+import javax.swing.JTabbedPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import java.awt.Font;
+import javax.swing.border.EtchedBorder;
+import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JScrollBar;
+import javax.swing.JSpinner;
+import javax.swing.AbstractListModel;
+
+
+public class Grafico1 extends JFrame {
+
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JButton btnNewButton_1;
+	private JTable tablero;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTable table;
+
+    /**
+     * Launch the application.
+     */
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    Grafico1 frame = new Grafico1();
+                    frame.setVisible(false);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    /**
+     * Create the frame.
+     */
+    public Grafico1() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        contentPane = new JPanel();
+        contentPane.setForeground(Color.BLACK);
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+        setContentPane(contentPane);
+        contentPane.setLayout(null);
+        
+        btnNewButton_1 = new JButton("Comenzar partida nueva");
+        btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+        btnNewButton_1.setBackground(Color.ORANGE);
+        btnNewButton_1.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent arg0) {
+        		
+        		jugar();
+        	 
+        	 
+        	}
+        });
+        btnNewButton_1.setBounds(10, 301, 180, 23);
+        contentPane.add(btnNewButton_1);
+        
+        tablero = new JTable();
+        tablero.setForeground(Color.BLACK);
+        tablero.setSurrendersFocusOnKeystroke(true);
+        tablero.setFillsViewportHeight(true);
+        tablero.setColumnSelectionAllowed(true);
+        tablero.setCellSelectionEnabled(true);
+        tablero.setBackground(Color.WHITE);
+        tablero.setToolTipText("");
+        tablero.setFont(new Font("Tahoma", Font.BOLD, 15));
+        tablero.setModel(new DefaultTableModel(
+        	new Object[][] {
+        		{null, "A", "B", "C", "D", "E", "F", "G", "H"},
+        		{"8", "TN", "CN", "AN", "QN", "KN", "AN", "CN", "TN"},
+        		{"7", "PN", "PN", "PN", "PN", "PN", "PN", "PN", "PN"},
+        		{"6", null, null, null, null, null, null, null, null},
+        		{"5", null, null, null, null, null, null, null, null},
+        		{"4", null, null, null, null, null, null, null, null},
+        		{"3", null, null, null, null, null, null, null, null},
+        		{"2", "PB", "PB", "PB", "PB", "PB", "PB", "PB", "PB"},
+        		{"1", "TB", "CB", "AB", "QB", "KB", "AB", "CB", "TB"},
+        	},
+        	new String[] {
+        		"A", "A", "B", "C", "D", "E", "F", "G", "H"
+        	}
+        ) {
+        	boolean[] columnEditables = new boolean[] {
+        		false, false, false, false, false, false, false, false, false
+        	};
+        	public boolean isCellEditable(int row, int column) {
+        		return columnEditables[column];
+        	}
+        });
+        tablero.getColumnModel().getColumn(0).setPreferredWidth(20);
+        tablero.getColumnModel().getColumn(0).setMinWidth(20);
+        tablero.getColumnModel().getColumn(1).setPreferredWidth(45);
+        tablero.getColumnModel().getColumn(2).setPreferredWidth(45);
+        tablero.getColumnModel().getColumn(3).setPreferredWidth(45);
+        tablero.getColumnModel().getColumn(4).setPreferredWidth(45);
+        tablero.getColumnModel().getColumn(5).setPreferredWidth(45);
+        tablero.getColumnModel().getColumn(6).setPreferredWidth(45);
+        tablero.getColumnModel().getColumn(7).setPreferredWidth(45);
+        tablero.getColumnModel().getColumn(8).setPreferredWidth(45);
+        tablero.setRowHeight(30);
+        tablero.setBounds(10, 20, 350, 270);
+        contentPane.add(tablero);
+        
+        JLabel lblFilaNro = new JLabel("Fila nro:");
+        lblFilaNro.setBounds(10, 349, 83, 14);
+        contentPane.add(lblFilaNro);
+        
+        JLabel lblLetraColumna = new JLabel("Letra Columna:");
+        lblLetraColumna.setBounds(10, 374, 105, 14);
+        contentPane.add(lblLetraColumna);
+        
+        JLabel lblMoverDesde = new JLabel("Mover desde:");
+        lblMoverDesde.setBounds(10, 324, 83, 14);
+        contentPane.add(lblMoverDesde);
+        
+        JLabel lblHasta = new JLabel("Hasta:");
+        lblHasta.setBounds(10, 415, 46, 14);
+        contentPane.add(lblHasta);
+        
+        JLabel lblNuevaFila = new JLabel("Nueva fila:");
+        lblNuevaFila.setBounds(10, 440, 105, 14);
+        contentPane.add(lblNuevaFila);
+        
+        JLabel lblNuevaColumna = new JLabel("Nueva Columna:");
+        lblNuevaColumna.setBounds(10, 465, 118, 14);
+        contentPane.add(lblNuevaColumna);
+        
+        textField = new JTextField();
+        textField.setBounds(125, 346, 46, 20);
+        contentPane.add(textField);
+        textField.setColumns(10);
+        
+        textField_1 = new JTextField();
+        textField_1.setColumns(10);
+        textField_1.setBounds(125, 371, 46, 20);
+        contentPane.add(textField_1);
+        
+        textField_2 = new JTextField();
+        textField_2.setColumns(10);
+        textField_2.setBounds(125, 437, 46, 20);
+        contentPane.add(textField_2);
+        
+        textField_3 = new JTextField();
+        textField_3.setColumns(10);
+        textField_3.setBounds(125, 462, 46, 20);
+        contentPane.add(textField_3);
+        
+        JButton btnMoverFicha = new JButton("Mover Ficha");
+        btnMoverFicha.setBackground(Color.ORANGE);
+        btnMoverFicha.setFont(new Font("Tahoma", Font.BOLD, 11));
+        btnMoverFicha.setForeground(Color.BLACK);
+        btnMoverFicha.setBounds(195, 461, 106, 23);
+        contentPane.add(btnMoverFicha);
+        
+        JButton btnContinuarPartidaAnterior = new JButton("Continuar partida anterior");
+        btnContinuarPartidaAnterior.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent arg0) {
+        		Grafico2 g= new Grafico2();
+        		g.setVisible(true);
+        	}
+        		
+        });
+        btnContinuarPartidaAnterior.setFont(new Font("Tahoma", Font.BOLD, 11));
+        btnContinuarPartidaAnterior.setBackground(Color.ORANGE);
+        btnContinuarPartidaAnterior.setBounds(200, 301, 180, 23);
+        contentPane.add(btnContinuarPartidaAnterior);
+        
+        JLabel lblFicha = new JLabel("Ficha");
+        lblFicha.setBounds(377, 20, 46, 14);
+        contentPane.add(lblFicha);
+        
+        JLabel lblDesde = new JLabel("Desde");
+        lblDesde.setBounds(435, 20, 46, 14);
+        contentPane.add(lblDesde);
+        
+        JLabel lblHacia = new JLabel("Hacia");
+        lblHacia.setBounds(491, 20, 46, 14);
+        contentPane.add(lblHacia);
+        
+        table = new JTable();
+        table.setModel(new DefaultTableModel(
+        	new Object[][] {
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        		{null, null, null},
+        	},
+        	new String[] {
+        		"Ficha", "Desde", "Hacia"
+        	}
+        ));
+        table.getColumnModel().getColumn(0).setPreferredWidth(50);
+        table.getColumnModel().getColumn(1).setPreferredWidth(50);
+        table.getColumnModel().getColumn(2).setPreferredWidth(50);
+        table.setBounds(377, 36, 152, 249);
+        contentPane.add(table);
+        setBounds(0,0,660,544);
+    }
+    public static void jugar()
+    {
+    	Ficha[][] tab;
+    	Jugar j= new Jugar();
+    	tab= j.nuevaPartida();
+    	
+    	
+    	
+    }
+    }
+    

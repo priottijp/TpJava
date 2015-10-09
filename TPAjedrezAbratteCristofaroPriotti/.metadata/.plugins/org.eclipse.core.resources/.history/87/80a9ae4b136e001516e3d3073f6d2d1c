@@ -1,0 +1,13 @@
+package paqueteMetodos;
+
+import paqueteAjedrez.*;
+import paquetePiezas.*;
+
+public class Jugar {
+
+	
+	Jugador j= new Jugador();
+	Jugador j2= new Jugador();
+	
+	
+}

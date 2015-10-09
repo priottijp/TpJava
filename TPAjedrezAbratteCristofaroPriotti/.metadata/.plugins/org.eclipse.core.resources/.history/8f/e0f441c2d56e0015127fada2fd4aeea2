@@ -1,0 +1,11 @@
+package paquetePiezas;
+
+public class Caballo extends Ficha {
+
+	public Caballo(String a, int j, int k) {
+		super(a, j, k);
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

@@ -1,0 +1,1201 @@
+!SESSION 2015-10-07 23:16:30.941 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-07 23:16:56.817
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-07 23:57:36.051
+!MESSAGE Designer [1.8.0.r45x201506110820.201510072357]: 201 (ASTEditor string replacement problem).
+!STACK 0
+org.eclipse.wb.internal.core.utils.exception.DesignerException: 201 (ASTEditor string replacement problem).
+	at org.eclipse.wb.internal.core.utils.ast.AstEditor$4.postVisit(AstEditor.java:859)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2714)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:618)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:470)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:212)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.wb.internal.core.utils.ast.AstEditor.replaceSubstring(AstEditor.java:886)
+	at org.eclipse.wb.internal.core.utils.ast.AstEditor.replaceExpressionString(AstEditor.java:1086)
+	at org.eclipse.wb.internal.core.utils.ast.AstEditor.replaceExpression(AstEditor.java:1035)
+	at org.eclipse.wb.core.model.JavaInfo.replaceExpression(JavaInfo.java:1001)
+	at org.eclipse.wb.internal.core.model.property.accessor.ConstructorAccessor$1.run(ConstructorAccessor.java:71)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.run(ExecutionUtils.java:324)
+	at org.eclipse.wb.internal.core.model.property.accessor.ConstructorAccessor.setExpression(ConstructorAccessor.java:69)
+	at org.eclipse.wb.internal.core.model.property.GenericPropertyImpl.setExpressionUsingAccessor(GenericPropertyImpl.java:341)
+	at org.eclipse.wb.internal.core.model.property.GenericPropertyImpl.setExpression(GenericPropertyImpl.java:297)
+	at org.eclipse.wb.internal.core.model.property.GenericPropertyImpl.setValueEx(GenericPropertyImpl.java:496)
+	at org.eclipse.wb.internal.core.model.property.GenericPropertyImpl.access$0(GenericPropertyImpl.java:469)
+	at org.eclipse.wb.internal.core.model.property.GenericPropertyImpl$1.run(GenericPropertyImpl.java:209)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.run(ExecutionUtils.java:324)
+	at org.eclipse.wb.internal.core.model.property.GenericPropertyImpl.setValue(GenericPropertyImpl.java:207)
+	at org.eclipse.wb.core.gef.policy.DirectTextPropertyEditPolicy$3.run(DirectTextPropertyEditPolicy.java:145)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.core.gef.policy.DirectTextPropertyEditPolicy.setText(DirectTextPropertyEditPolicy.java:143)
+	at org.eclipse.wb.gef.graphical.policies.DirectTextEditPolicy.commitEdit(DirectTextEditPolicy.java:83)
+	at org.eclipse.wb.gef.graphical.policies.DirectTextEditPolicy.access$1(DirectTextEditPolicy.java:80)
+	at org.eclipse.wb.gef.graphical.policies.DirectTextEditPolicy$4.handleEvent(DirectTextEditPolicy.java:118)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:2863)
+	at org.eclipse.swt.widgets.Widget.wmKillFocus(Widget.java:1995)
+	at org.eclipse.swt.widgets.Control.WM_KILLFOCUS(Control.java:5057)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4710)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2671)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5063)
+	at org.eclipse.swt.internal.win32.OS.SetFocus(Native Method)
+	at org.eclipse.swt.widgets.Control.fixFocus(Control.java:1059)
+	at org.eclipse.swt.widgets.Control.setEnabled(Control.java:3336)
+	at org.eclipse.swt.widgets.Shell.setEnabled(Shell.java:1539)
+	at org.eclipse.wb.internal.swing.utils.SwingUtils.setMainShellEnabled(SwingUtils.java:222)
+	at org.eclipse.wb.internal.swing.utils.SwingUtils.invokeLaterAndWait(SwingUtils.java:159)
+	at org.eclipse.wb.internal.swing.utils.SwingUtils.runLaterAndWait(SwingUtils.java:73)
+	at org.eclipse.wb.internal.swing.model.component.ComponentInfo.execRefreshOperation(ComponentInfo.java:119)
+	at org.eclipse.wb.core.model.ObjectInfo.refresh(ObjectInfo.java:482)
+	at org.eclipse.wb.core.model.ObjectInfo.endEdit(ObjectInfo.java:446)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.run(ExecutionUtils.java:325)
+	at org.eclipse.wb.core.gef.command.CompoundEditCommand.execute(CompoundEditCommand.java:45)
+	at org.eclipse.wb.internal.gef.core.EditDomain.executeCommand(EditDomain.java:59)
+	at org.eclipse.wb.internal.core.editor.actions.CutAction$2.run(CutAction.java:70)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.actions.CutAction.run(CutAction.java:61)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor103.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1266)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1164)
+	at org.eclipse.swt.widgets.Text.sendKeyEvent(Text.java:1767)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1581)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4795)
+	at org.eclipse.swt.widgets.Text.WM_CHAR(Text.java:2688)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4676)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2671)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-07 23:57:36.942
+!MESSAGE Designer [1.8.0.r45x201506110820.201510072357]: java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.gef.core.EditPart.getViewer(EditPart.java:539)
+	at org.eclipse.wb.internal.core.gef.part.DesignRootEditPart$1.getFigureCanvas(DesignRootEditPart.java:78)
+	at org.eclipse.wb.internal.core.gef.part.DesignRootEditPart$1.refreshed(DesignRootEditPart.java:72)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$53be5a7b.refreshed(<generated>)
+	at org.eclipse.wb.core.model.ObjectInfo.refresh(ObjectInfo.java:504)
+	at org.eclipse.wb.core.model.ObjectInfo.endEdit(ObjectInfo.java:446)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.run(ExecutionUtils.java:325)
+	at org.eclipse.wb.core.gef.command.CompoundEditCommand.execute(CompoundEditCommand.java:45)
+	at org.eclipse.wb.internal.gef.core.EditDomain.executeCommand(EditDomain.java:59)
+	at org.eclipse.wb.internal.core.editor.actions.CutAction$2.run(CutAction.java:70)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.actions.CutAction.run(CutAction.java:61)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor103.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1266)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1164)
+	at org.eclipse.swt.widgets.Text.sendKeyEvent(Text.java:1767)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1581)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4795)
+	at org.eclipse.swt.widgets.Text.WM_CHAR(Text.java:2688)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4676)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2671)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2015-10-08 11:44:41.771 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-08 11:46:12.266
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-08 12:18:15.777 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-10-08 12:18:21.645
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-08 12:18:37.025
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-08 12:20:21.243 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-10-08 12:20:25.270
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-08 12:20:40.706
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-08 12:26:47.432 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-10-08 12:26:54.024
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-08 12:27:10.472
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-08 19:07:03.604 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-08 19:07:36.642
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-08 19:32:07.072
+!MESSAGE Designer [1.8.0.r45x201506110820.201510081932]: java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.core.eval.AstEvaluationEngine$1.runObject(AstEvaluationEngine.java:65)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObjectLog(ExecutionUtils.java:304)
+	at org.eclipse.wb.core.eval.AstEvaluationEngine.evaluate(AstEvaluationEngine.java:63)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.evaluateColumnModelInvocations(JTableInfo.java:76)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.access$0(JTableInfo.java:69)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo$1.evaluateAfter(JTableInfo.java:62)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.EvaluationEventListener$$EnhancerByCGLIB$$e6e0ac41.evaluateAfter(<generated>)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.evaluateNode(JavaInfoParser.java:1311)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$1(JavaInfoParser.java:1300)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor$3.run(JavaInfoParser.java:602)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runRethrow(ExecutionUtils.java:119)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor.postVisit(JavaInfoParser.java:592)
+	at sun.reflect.GeneratedMethodAccessor54.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils$1.intercept(ExecutionFlowUtils.java:399)
+	at org.eclipse.jdt.core.dom.ASTVisitor$$EnhancerByCGLIB$$98e88f86.postVisit(<generated>)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2714)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:354)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:336)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parseRootMethods(JavaInfoParser.java:312)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:268)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:238)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:159)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:534)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:522)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:449)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:446)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:463)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:371)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:500)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:465)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:415)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager$6.run(UndoManager.java:330)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-08 19:32:57.200
+!MESSAGE Designer [1.8.0.r45x201506110820.201510081932]: java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.core.eval.AstEvaluationEngine$1.runObject(AstEvaluationEngine.java:65)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObjectLog(ExecutionUtils.java:304)
+	at org.eclipse.wb.core.eval.AstEvaluationEngine.evaluate(AstEvaluationEngine.java:63)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.evaluateColumnModelInvocations(JTableInfo.java:76)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.access$0(JTableInfo.java:69)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo$1.evaluateAfter(JTableInfo.java:62)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.EvaluationEventListener$$EnhancerByCGLIB$$e6e0ac41.evaluateAfter(<generated>)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.evaluateNode(JavaInfoParser.java:1311)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$1(JavaInfoParser.java:1300)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor$3.run(JavaInfoParser.java:602)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runRethrow(ExecutionUtils.java:119)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor.postVisit(JavaInfoParser.java:592)
+	at sun.reflect.GeneratedMethodAccessor54.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils$1.intercept(ExecutionFlowUtils.java:399)
+	at org.eclipse.jdt.core.dom.ASTVisitor$$EnhancerByCGLIB$$98e88f86.postVisit(<generated>)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2714)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:354)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:336)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parseRootMethods(JavaInfoParser.java:312)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:268)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:238)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:159)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:534)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:522)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:449)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:446)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:463)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:371)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:500)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:465)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:415)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager.activate(UndoManager.java:90)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState_True(DesignPage.java:263)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState(DesignPage.java:241)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode.showPage(DefaultMultiMode.java:125)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode$1.widgetSelected(DefaultMultiMode.java:63)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:788)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3158)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1841)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-08 19:35:27.544
+!MESSAGE Designer [1.8.0.r45x201506110820.201510081932]: java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.core.eval.AstEvaluationEngine$1.runObject(AstEvaluationEngine.java:65)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObjectLog(ExecutionUtils.java:304)
+	at org.eclipse.wb.core.eval.AstEvaluationEngine.evaluate(AstEvaluationEngine.java:63)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.evaluateColumnModelInvocations(JTableInfo.java:76)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.access$0(JTableInfo.java:69)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo$1.evaluateAfter(JTableInfo.java:62)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.EvaluationEventListener$$EnhancerByCGLIB$$e6e0ac41.evaluateAfter(<generated>)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.evaluateNode(JavaInfoParser.java:1311)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$1(JavaInfoParser.java:1300)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor$3.run(JavaInfoParser.java:602)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runRethrow(ExecutionUtils.java:119)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor.postVisit(JavaInfoParser.java:592)
+	at sun.reflect.GeneratedMethodAccessor54.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils$1.intercept(ExecutionFlowUtils.java:399)
+	at org.eclipse.jdt.core.dom.ASTVisitor$$EnhancerByCGLIB$$98e88f86.postVisit(<generated>)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2714)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:354)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:336)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parseRootMethods(JavaInfoParser.java:312)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:268)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:238)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:159)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:534)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:522)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:449)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:446)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:463)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:371)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:500)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:465)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:415)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager.activate(UndoManager.java:90)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState_True(DesignPage.java:263)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState(DesignPage.java:241)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode.showPage(DefaultMultiMode.java:125)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode$1.widgetSelected(DefaultMultiMode.java:63)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:788)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3158)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1841)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2015-10-08 19:45:39.349 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-08 19:45:58.846
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-09 12:40:19.428 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-09 12:41:00.244
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2015-10-09 15:45:44.041
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.annotateType(ImportRewrite.java:1307)
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.internalAddImport(ImportRewrite.java:1411)
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.addImport(ImportRewrite.java:855)
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.internalAddImport(ImportRewrite.java:1405)
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.addImport(ImportRewrite.java:855)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.NewVariableCorrectionProposal.evaluateVariableType(NewVariableCorrectionProposal.java:504)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.NewVariableCorrectionProposal.doAddField(NewVariableCorrectionProposal.java:424)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.NewVariableCorrectionProposal.getRewrite(NewVariableCorrectionProposal.java:113)
+	at org.eclipse.jdt.ui.text.java.correction.ASTRewriteCorrectionProposal.addEdits(ASTRewriteCorrectionProposal.java:113)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.createTextChange(CUCorrectionProposal.java:234)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.createChange(CUCorrectionProposal.java:244)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:377)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.getTextChange(CUCorrectionProposal.java:254)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.getAdditionalProposalInfo(CUCorrectionProposal.java:141)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-10-09 16:01:05.347 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-09 16:01:24.211
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-09 16:18:40.165
+!MESSAGE Designer [1.8.0.r45x201506110820.201510091618]: java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.core.eval.AstEvaluationEngine$1.runObject(AstEvaluationEngine.java:65)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObjectLog(ExecutionUtils.java:304)
+	at org.eclipse.wb.core.eval.AstEvaluationEngine.evaluate(AstEvaluationEngine.java:63)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.evaluateColumnModelInvocations(JTableInfo.java:76)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.access$0(JTableInfo.java:69)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo$1.evaluateAfter(JTableInfo.java:62)
+	at sun.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.EvaluationEventListener$$EnhancerByCGLIB$$ef939163.evaluateAfter(<generated>)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.evaluateNode(JavaInfoParser.java:1311)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$1(JavaInfoParser.java:1300)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor$3.run(JavaInfoParser.java:602)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runRethrow(ExecutionUtils.java:119)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor.postVisit(JavaInfoParser.java:592)
+	at sun.reflect.GeneratedMethodAccessor60.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils$1.intercept(ExecutionFlowUtils.java:399)
+	at org.eclipse.jdt.core.dom.ASTVisitor$$EnhancerByCGLIB$$a19b74a8.postVisit(<generated>)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2714)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:354)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:336)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parseRootMethods(JavaInfoParser.java:312)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:268)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:238)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:159)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:534)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:522)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:449)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:446)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:463)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:371)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:500)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:465)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:415)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager.activate(UndoManager.java:90)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState_True(DesignPage.java:263)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState(DesignPage.java:241)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode.showPage(DefaultMultiMode.java:125)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode$1.widgetSelected(DefaultMultiMode.java:63)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:788)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3158)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1841)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2015-10-09 16:57:12.884 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-09 16:57:32.588
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-09 17:03:12.877
+!MESSAGE Designer [1.8.0.r45x201506110820.201510091703]: java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.core.eval.AstEvaluationEngine$1.runObject(AstEvaluationEngine.java:65)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObjectLog(ExecutionUtils.java:304)
+	at org.eclipse.wb.core.eval.AstEvaluationEngine.evaluate(AstEvaluationEngine.java:63)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.evaluateColumnModelInvocations(JTableInfo.java:76)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.access$0(JTableInfo.java:69)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo$1.evaluateAfter(JTableInfo.java:62)
+	at sun.reflect.GeneratedMethodAccessor84.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.EvaluationEventListener$$EnhancerByCGLIB$$672e3ade.evaluateAfter(<generated>)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.evaluateNode(JavaInfoParser.java:1311)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$1(JavaInfoParser.java:1300)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor$3.run(JavaInfoParser.java:602)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runRethrow(ExecutionUtils.java:119)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor.postVisit(JavaInfoParser.java:592)
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils$1.intercept(ExecutionFlowUtils.java:399)
+	at org.eclipse.jdt.core.dom.ASTVisitor$$EnhancerByCGLIB$$19361e23.postVisit(<generated>)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2714)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:354)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:336)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parseRootMethods(JavaInfoParser.java:312)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:268)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:238)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:159)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:534)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:522)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:449)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:446)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:463)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:371)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:500)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:465)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:415)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager.activate(UndoManager.java:90)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState_True(DesignPage.java:263)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState(DesignPage.java:241)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode.showPage(DefaultMultiMode.java:125)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode$1.widgetSelected(DefaultMultiMode.java:63)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:788)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3158)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1841)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-09 17:17:41.543
+!MESSAGE Designer [1.8.0.r45x201506110820.201510091703]: java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.core.eval.AstEvaluationEngine$1.runObject(AstEvaluationEngine.java:65)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObjectLog(ExecutionUtils.java:304)
+	at org.eclipse.wb.core.eval.AstEvaluationEngine.evaluate(AstEvaluationEngine.java:63)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.evaluateColumnModelInvocations(JTableInfo.java:76)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.access$0(JTableInfo.java:69)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo$1.evaluateAfter(JTableInfo.java:62)
+	at sun.reflect.GeneratedMethodAccessor84.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.EvaluationEventListener$$EnhancerByCGLIB$$672e3ade.evaluateAfter(<generated>)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.evaluateNode(JavaInfoParser.java:1311)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$1(JavaInfoParser.java:1300)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor$3.run(JavaInfoParser.java:602)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runRethrow(ExecutionUtils.java:119)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor.postVisit(JavaInfoParser.java:592)
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils$1.intercept(ExecutionFlowUtils.java:399)
+	at org.eclipse.jdt.core.dom.ASTVisitor$$EnhancerByCGLIB$$19361e23.postVisit(<generated>)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2714)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:354)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:336)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parseRootMethods(JavaInfoParser.java:312)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:268)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:238)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:159)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:534)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:522)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:449)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:446)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:463)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:371)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:500)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:465)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:415)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager.activate(UndoManager.java:90)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState_True(DesignPage.java:263)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState(DesignPage.java:241)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode.showPage(DefaultMultiMode.java:125)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode$1.widgetSelected(DefaultMultiMode.java:63)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:788)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3158)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1841)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-09 17:18:26.549
+!MESSAGE Designer [1.8.0.r45x201506110820.201510091703]: java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.core.eval.AstEvaluationEngine$1.runObject(AstEvaluationEngine.java:65)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObjectLog(ExecutionUtils.java:304)
+	at org.eclipse.wb.core.eval.AstEvaluationEngine.evaluate(AstEvaluationEngine.java:63)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.evaluateColumnModelInvocations(JTableInfo.java:76)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.access$0(JTableInfo.java:69)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo$1.evaluateAfter(JTableInfo.java:62)
+	at sun.reflect.GeneratedMethodAccessor84.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.EvaluationEventListener$$EnhancerByCGLIB$$672e3ade.evaluateAfter(<generated>)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.evaluateNode(JavaInfoParser.java:1311)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$1(JavaInfoParser.java:1300)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor$3.run(JavaInfoParser.java:602)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runRethrow(ExecutionUtils.java:119)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor.postVisit(JavaInfoParser.java:592)
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils$1.intercept(ExecutionFlowUtils.java:399)
+	at org.eclipse.jdt.core.dom.ASTVisitor$$EnhancerByCGLIB$$19361e23.postVisit(<generated>)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2714)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:354)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:336)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parseRootMethods(JavaInfoParser.java:312)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:268)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:238)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:159)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:534)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:522)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:449)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:446)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:463)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:371)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:500)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:465)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:415)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager.activate(UndoManager.java:90)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState_True(DesignPage.java:263)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState(DesignPage.java:241)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode.showPage(DefaultMultiMode.java:125)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode$1.widgetSelected(DefaultMultiMode.java:63)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:788)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3158)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1841)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.jface.text 2 0 2015-10-09 17:30:06.988
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.annotateType(ImportRewrite.java:1307)
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.internalAddImport(ImportRewrite.java:1411)
+	at org.eclipse.jdt.core.dom.rewrite.ImportRewrite.addImport(ImportRewrite.java:855)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.ChangeMethodSignatureProposal.modifyParameters(ChangeMethodSignatureProposal.java:213)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.ChangeMethodSignatureProposal.getRewrite(ChangeMethodSignatureProposal.java:131)
+	at org.eclipse.jdt.ui.text.java.correction.ASTRewriteCorrectionProposal.addEdits(ASTRewriteCorrectionProposal.java:113)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.createTextChange(CUCorrectionProposal.java:234)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.createChange(CUCorrectionProposal.java:244)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:377)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.getTextChange(CUCorrectionProposal.java:254)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.getAdditionalProposalInfo(CUCorrectionProposal.java:141)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-10-09 17:49:31.315 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-09 17:49:50.674
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-10-09 17:49:56.953
+!MESSAGE An internal error occurred during: "Setup check".
+!STACK 0
+org.eclipse.emf.common.util.BasicEList$BasicIndexOutOfBoundsException: index=0, size=0
+	at org.eclipse.emf.common.util.BasicEList.get(BasicEList.java:346)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.getInstallation(SetupContext.java:633)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.createSelf(SetupContext.java:219)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:429)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$3(SetupUIPlugin.java:323)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:223)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-10-09 17:50:03.974 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-09 17:50:22.470
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-09 19:29:16.559 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-09 19:29:36.615
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wb.core 4 4 2015-10-09 19:42:08.887
+!MESSAGE Designer [1.8.0.r45x201506110820.201510091942]: java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.core.eval.AstEvaluationEngine$1.runObject(AstEvaluationEngine.java:65)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObjectLog(ExecutionUtils.java:304)
+	at org.eclipse.wb.core.eval.AstEvaluationEngine.evaluate(AstEvaluationEngine.java:63)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.evaluateColumnModelInvocations(JTableInfo.java:76)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo.access$0(JTableInfo.java:69)
+	at org.eclipse.wb.internal.swing.model.component.JTableInfo$1.evaluateAfter(JTableInfo.java:62)
+	at sun.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.EvaluationEventListener$$EnhancerByCGLIB$$32e56ac9.evaluateAfter(<generated>)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.evaluateNode(JavaInfoParser.java:1311)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$1(JavaInfoParser.java:1300)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor$3.run(JavaInfoParser.java:602)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runRethrow(ExecutionUtils.java:119)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$ExecutionFlowParseVisitor.postVisit(JavaInfoParser.java:592)
+	at sun.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils$1.intercept(ExecutionFlowUtils.java:399)
+	at org.eclipse.jdt.core.dom.ASTVisitor$$EnhancerByCGLIB$$e4ed4e0e.postVisit(<generated>)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2714)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:354)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:336)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parseRootMethods(JavaInfoParser.java:312)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:268)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.access$9(JavaInfoParser.java:238)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:153)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser$1.runObject(JavaInfoParser.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:159)
+	at org.eclipse.wb.internal.core.parser.JavaInfoParser.parse(JavaInfoParser.java:151)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:534)
+	at org.eclipse.wb.internal.core.editor.DesignPage.access$9(DesignPage.java:522)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8$1.run(DesignPage.java:449)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.wb.internal.core.editor.DesignPage$8.run(DesignPage.java:446)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:463)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:371)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:500)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF_withProgress(DesignPage.java:465)
+	at org.eclipse.wb.internal.core.editor.DesignPage.internal_refreshGEF(DesignPage.java:415)
+	at org.eclipse.wb.internal.core.editor.UndoManager.refreshDesignerEditor(UndoManager.java:381)
+	at org.eclipse.wb.internal.core.editor.UndoManager.activate(UndoManager.java:90)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState_True(DesignPage.java:263)
+	at org.eclipse.wb.internal.core.editor.DesignPage.handleActiveState(DesignPage.java:241)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode.showPage(DefaultMultiMode.java:125)
+	at org.eclipse.wb.internal.core.editor.multi.DefaultMultiMode$1.widgetSelected(DefaultMultiMode.java:63)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:788)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3158)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1841)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2015-10-09 19:44:51.063 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-09 19:45:10.839
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

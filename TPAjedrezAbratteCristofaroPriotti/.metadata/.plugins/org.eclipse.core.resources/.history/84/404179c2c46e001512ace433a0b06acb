@@ -1,0 +1,17 @@
+package paquetePiezas;
+
+public class Ficha {
+	
+	String color;
+	int x,y;
+	String estado;
+	
+	Ficha(String a, int j, int k)
+	{
+		this.color=a;
+		this.x=j;
+		this.y=k;
+		this.estado="activa";
+		
+	}
+}

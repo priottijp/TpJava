@@ -1,0 +1,11 @@
+package paquetePiezas;
+
+public class Reina extends Ficha {
+
+	public Reina(String a, int j, int k) {
+		super(a, j, k);
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

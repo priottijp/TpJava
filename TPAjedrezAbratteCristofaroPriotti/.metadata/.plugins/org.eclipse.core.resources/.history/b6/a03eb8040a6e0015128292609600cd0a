@@ -1,0 +1,12 @@
+package paqueteMetodos;
+
+public class Movimientos {
+
+	public static boolean validarMov()
+	{
+		
+			
+		return false;
+		
+	}
+}

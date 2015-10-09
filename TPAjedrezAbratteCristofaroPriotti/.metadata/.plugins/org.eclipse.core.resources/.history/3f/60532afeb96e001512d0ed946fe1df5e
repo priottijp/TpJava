@@ -1,0 +1,6 @@
+package paquetePiezas;
+
+
+public class Torre extends Ficha {
+
+}

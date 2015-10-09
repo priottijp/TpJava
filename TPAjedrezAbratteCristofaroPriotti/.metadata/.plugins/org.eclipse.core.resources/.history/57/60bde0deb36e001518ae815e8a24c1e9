@@ -1,0 +1,32 @@
+package paqueteMetodos;
+
+import paqueteAjedrez.*;
+import paquetePiezas.*;
+
+public class Jugar {
+
+	public static void main (String[] args)
+	{
+	
+	Jugador j= new Jugador();
+	Jugador j2= new Jugador();
+	Grafico1 g1= new Grafico1();
+	Grafico2 g2= new Grafico2();
+	
+	g1.setVisible(true);
+	
+	}
+	
+	public static void moverficha()
+	{
+		
+		
+	}
+	
+	
+	
+	
+
+	
+	
+}

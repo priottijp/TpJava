@@ -1,0 +1,7 @@
+package paquetePiezas;
+
+import java.lang.Object.Ficha;
+
+public class Torre extends Ficha {
+
+}

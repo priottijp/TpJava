@@ -1,0 +1,17 @@
+GRUPO: ABRATTE MARCO
+       CRISTOFARO MATIAS
+       PRIOTTI JUAN PABLO      
+
+
+ENTREGA 09/10:
+
+Rar subido a git
+
+
+Entrega viernes 16/10 :
+
+Validacion de movimientos.
+
+Entrega 23/10:
+
+Integracion a SQL.
